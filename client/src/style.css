@@ -1,0 +1,434 @@
+:root {
+    --primary-green: #0d5c3a;
+    --accent-green: #107c41;
+    --student-color: #2e7d32;
+    --faculty-color: #1565c0;
+    --admin-color: #6a1b9a;
+    --bg-light: #f8fafc;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffff;
+    color: #333;
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Container for the navigation buttons */
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Base button box styles */
+.btn-primary, .btn-secondary, .btn-tertiary {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* Secondary Button (Login) - Outlined Box */
+.btn-secondary {
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(13, 92, 58, 0.08);
+}
+
+/* Primary Button (Register) - Solid Box */
+.btn-primary {
+    color: #ffffff;
+    background-color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+}
+.logo-group{
+    display:flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-badge{
+    background: #05462a;
+    color:white;
+    font-weight:bold;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.university-name{
+    font-weight: 800;   
+}
+
+
+.sub-dept{
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.nav-actions{
+    display:flex;
+    gap: 12px;
+}
+
+.hero-banner{
+    background: linear-gradient(135deg, var(--primary-green) 0%, #052e1c 100%);
+    color:white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.module-tag{
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.hero-banner h1{
+    font-size: 2.5rem;
+    margin: 1rem 1rem;
+}
+
+.subtitle{
+    font-size: 1.1rem;
+    opacity: 0.9rem;
+    max-width:600px;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-cta-group{
+    display:flex;
+    justify-content: center;
+    gap: 15px;
+}
+.btn-hero-primary {
+    color:  #0d5c3a;
+    background-color: white;
+    border: 2px solid var(--primary-green);
+    padding: 0.1rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 25px;
+
+}
+.btn-hero-secondary {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+.section-container{
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bg-light{
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.flow-image-card{
+    background:white;
+    padding:1 rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.flow-img {
+    width:100%;
+    max-width: 850px;
+    border-radius: 12px;
+}
+
+/*Role Cards*/
+.roles-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.role-card{
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    border-top: 5px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.student-border{
+    border-color: var(--student-color);
+}
+.faculty-border{
+    border-color: var(--faculty-color);
+}
+.admin-border{
+    border-color: var(--admin-color);
+}
+
+.role-icon{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-bullets{
+    list-style: none;
+    margin:1.2rem 0;
+    color: #475569;
+}
+
+.feature-bullets li{
+    padding: 6px 0;
+    font-size: 0.9rem;
+}
+
+.btn-portal{
+    width: 100%;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.student-border{
+    border-color: var(--student-color);
+}
+.faculty-border{
+    border-color: var(--faculty-color);
+}
+.admin-border{
+    border-color: var(--admin-color);
+}
+
+.carousel-wrapper{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track-container{
+    overflow:hidden;
+    width:100%;
+}
+/* =========================================
+   INTERACTIVE JAVASCRIPT SECTION
+   ========================================= */
+
+.interactive-section {
+    background-color: #f8fafc;
+    padding: 4rem 2rem;
+}
+
+.interactive-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Input sections */
+
+.input-group,
+.activity-group {
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.input-group label,
+.activity-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+
+/* Input boxes */
+
+.input-group input,
+.activity-group input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group input:focus,
+.activity-group input:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(13, 92, 58, 0.1);
+}
+
+
+/* Real-time name output */
+
+#nameOutput {
+    margin-top: 0.75rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+
+/* Interactive buttons */
+
+.interactive-button,
+.welcome-button {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.interactive-button:hover,
+.welcome-button:hover {
+    background-color: var(--accent-green);
+    transform: translateY(-2px);
+}
+
+.welcome-button {
+    margin-bottom: 1rem;
+}
+
+
+/* Welcome message */
+
+#welcomeMessage {
+    min-height: 25px;
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+
+/* JavaScript style change */
+
+.message-highlight {
+    background-color: #dff3e8;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+
+
+/* Activity list */
+
+.activity-list-container {
+    margin-top: 2.5rem;
+    text-align: left;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.activity-list-container h3 {
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+#activityList {
+    list-style: none;
+    padding: 0;
+}
+
+#activityList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Remove button */
+
+.remove-btn {
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    background-color: #dc2626;
+    color: white;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #b91c1c;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .interactive-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .activity-list-container {
+        padding: 1.25rem;
+    }
+
+    #activityList li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remove-btn {
+        width: 100%;
+    }
+
+}
